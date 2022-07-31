@@ -1,0 +1,17 @@
+Started by user [8mha:////4KFb8UIwSoLf5WsSMDxQL0RpJ2/I2ihmFakCOzdW0wObAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/simple_java
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[simple_java] $ /bin/sh -xe /tmp/jenkins11155532120546737025.sh
++ git clone https://github.com/Kapil987/git_prac.git
+Cloning into 'git_prac'...
++ cd git_prac
++ javac HelloWorld.java
+HelloWorld.java:4: error: class Calculator is public, should be declared in a file named Calculator.java
+public class Calculator {
+       ^
+1 error
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

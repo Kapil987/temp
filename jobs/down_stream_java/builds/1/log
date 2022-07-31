@@ -1,0 +1,13 @@
+Started by user [8mha:////4KFb8UIwSoLf5WsSMDxQL0RpJ2/I2ihmFakCOzdW0wObAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/down_stream_java
+[down_stream_java] $ /bin/sh -xe /tmp/jenkins15884914590104096530.sh
++ git clone https://github.com/Kapil987/git_prac.git
+Cloning into 'git_prac'...
++ cd git_prac
++ javac Calculator.java
++ java Calculator
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at Calculator.main(Calculator.java:9)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

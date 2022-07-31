@@ -1,0 +1,23 @@
+Started by GitHub push by Kapil987
+Started by GitHub push by Kapil987
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/min_proj_web-hook
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/min_proj_web-hook/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Kapil987/min_proj.git # timeout=10
+Fetching upstream changes from https://github.com/Kapil987/min_proj.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.37.1'
+ > git fetch --tags --force --progress -- https://github.com/Kapil987/min_proj.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 34b98f8f34d558eb44b110a25813c20d376d9777 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 34b98f8f34d558eb44b110a25813c20d376d9777 # timeout=10
+Commit message: "Merge pull request #4 from Kapil987/br"
+ > git rev-list --no-walk 26ef346830d61076a2dc70296a26b63edbfdfa65 # timeout=10
+[min_proj_web-hook] $ /bin/sh -xe /tmp/jenkins11028042500134302200.sh
++ echo 'Hello from git hub'
+Hello from git hub
+Finished: SUCCESS

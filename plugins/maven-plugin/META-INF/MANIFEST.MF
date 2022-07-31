@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.2
+Build-Jdk-Spec: 11
+Specification-Title: Maven Integration plugin
+Specification-Version: 3.19
+Implementation-Title: Maven Integration plugin
+Implementation-Version: 3.19
+Plugin-Class: hudson.maven.PluginImpl
+Group-Id: org.jenkins-ci.main
+Short-Name: maven-plugin
+Long-Name: Maven Integration plugin
+Url: https://github.com/jenkinsci/maven-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 3.19
+Hudson-Version: 2.332.1
+Jenkins-Version: 2.332.1
+Plugin-Dependencies: apache-httpcomponents-client-4-api:4.5.13-1.0,javad
+ oc:217.v905b_86277a_2a_,jsch:0.1.55.2,junit:1119.va_a_5e9068da_d7,maile
+ r:414.vcc4c33714601,token-macro:293.v283932a_0a_b_49;resolution:=option
+ al
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/maven-plugin
+

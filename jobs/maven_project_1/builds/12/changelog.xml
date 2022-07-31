@@ -1,0 +1,12 @@
+commit c8ef288e9e9e7a688a14c17f6e5095319b015b84
+tree 77bec03b18658462b73ed19cbc1b1080d96ebfaa
+parent 76e6fc811fe4e409d6ac3711fc07e1ea463b9a48
+author KAPIL <kapil0123@gmail.com> 2022-07-31 13:54:23 +0530
+committer GitHub <noreply@github.com> 2022-07-31 13:54:23 +0530
+
+    Revert "page designed"
+
+
+:100644 000000 8f6373eb0cc8b4745722630b5c3bea7c81c7425b 0000000000000000000000000000000000000000 D	src/main/java/com/javacodegeeks/controller/ApplicationController.java
+:100644 000000 9c94428ed28350f98c5e727f0588ab6be7f1b00b 0000000000000000000000000000000000000000 D	src/main/webapp/WEB-INF/view-resolver-servlet.xml
+:100644 100644 488f325e3b4f2d1591a716437b0c058eda787c4e 9f88c1f9632445500e3b3688fe477b860f77d8f2 M	src/main/webapp/WEB-INF/web.xml

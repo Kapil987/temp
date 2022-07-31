@@ -1,0 +1,22 @@
+Started by GitHub push by vinod0123
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/min_proj_web-hook
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/min_proj_web-hook/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Kapil987/min_proj.git # timeout=10
+Fetching upstream changes from https://github.com/Kapil987/min_proj.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.37.1'
+ > git fetch --tags --force --progress -- https://github.com/Kapil987/min_proj.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 4a459b239f48b2ea325e3cc9f805f83954786bdf (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4a459b239f48b2ea325e3cc9f805f83954786bdf # timeout=10
+Commit message: "update"
+ > git rev-list --no-walk b99c0585ab65b48e33a206993b4a4cc3f1bc7c3f # timeout=10
+[min_proj_web-hook] $ /bin/sh -xe /tmp/jenkins346253935274241004.sh
++ echo 'Hello from git hub'
+Hello from git hub
+Finished: SUCCESS

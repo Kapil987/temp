@@ -1,0 +1,10 @@
+commit ffdd590ead9f2fe764730526e725e833d9d2e21f
+tree 22c7c702605a17e1c4b240828164b8655efdcf71
+parent 4a459b239f48b2ea325e3cc9f805f83954786bdf
+author kapil <kapil0123@gmail.com> 2022-07-31 14:03:22 +0530
+committer kapil <kapil0123@gmail.com> 2022-07-31 14:03:22 +0530
+
+    New sample webpage
+
+
+:100644 100644 2d12aefb194b309bdabf3c815f69a92409fdc1d7 eeabf6295df6420362aec46126d3c054d8ac6e90 M	src/main/webapp/index.jsp

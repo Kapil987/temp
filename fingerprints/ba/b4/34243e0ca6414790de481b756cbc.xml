@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-07-31 06:33:02.967 UTC</timestamp>
+  <original>
+    <name>maven_project_1/com.demo:demo</name>
+    <number>2</number>
+  </original>
+  <md5sum>bab434243e0ca6414790de481b756cbc</md5sum>
+  <fileName>com.demo:demo:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>maven_project_1</string>
+      <ranges>2-15</ranges>
+    </entry>
+    <entry>
+      <string>maven_project_1/com.demo:demo</string>
+      <ranges>2-15</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

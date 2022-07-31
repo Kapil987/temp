@@ -1,0 +1,12 @@
+commit 833b8aa86feeb3c870f54970d95ea976df649a81
+tree 0a72b9cf7aaf6fcd39542dda27d25cdf778d9acd
+parent 4a459b239f48b2ea325e3cc9f805f83954786bdf
+author kapil <kapil0123@gmail.com> 2022-07-31 13:52:27 +0530
+committer kapil <kapil0123@gmail.com> 2022-07-31 13:52:27 +0530
+
+    page designed
+
+
+:000000 100644 0000000000000000000000000000000000000000 8f6373eb0cc8b4745722630b5c3bea7c81c7425b A	src/main/java/com/javacodegeeks/controller/ApplicationController.java
+:000000 100644 0000000000000000000000000000000000000000 9c94428ed28350f98c5e727f0588ab6be7f1b00b A	src/main/webapp/WEB-INF/view-resolver-servlet.xml
+:100644 100644 9f88c1f9632445500e3b3688fe477b860f77d8f2 488f325e3b4f2d1591a716437b0c058eda787c4e M	src/main/webapp/WEB-INF/web.xml

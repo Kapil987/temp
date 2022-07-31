@@ -1,0 +1,6 @@
+[filesystem "Red Hat, Inc.|1.8.0_332|/dev/xvda1"]
+	timestampResolution = 8001 microseconds
+	minRacyThreshold = 0 nanoseconds
+[filesystem "Red Hat, Inc.|11.0.13|/dev/xvda1"]
+	timestampResolution = 6000 nanoseconds
+	minRacyThreshold = 3865 microseconds

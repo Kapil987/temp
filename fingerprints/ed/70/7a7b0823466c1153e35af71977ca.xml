@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-07-31 07:16:55.141 UTC</timestamp>
+  <original>
+    <name>maven_project_1/com.demo:demo</name>
+    <number>4</number>
+  </original>
+  <md5sum>ed707a7b0823466c1153e35af71977ca</md5sum>
+  <fileName>com.demo:demo.war</fileName>
+  <usages>
+    <entry>
+      <string>maven_project_1</string>
+      <ranges>4</ranges>
+    </entry>
+    <entry>
+      <string>maven_project_1/com.demo:demo</string>
+      <ranges>4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-07-31 06:33:02.974 UTC</timestamp>
+  <md5sum>3c42be5ea7cbf3635716abbb429cb90d</md5sum>
+  <fileName>junit:junit-4.11.jar</fileName>
+  <usages>
+    <entry>
+      <string>maven_project_1</string>
+      <ranges>2-10,12-15</ranges>
+    </entry>
+    <entry>
+      <string>maven_project_1/com.demo:demo</string>
+      <ranges>2-10,12-15</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

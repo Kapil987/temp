@@ -1,0 +1,14 @@
+Started by user [8mha:////4KFb8UIwSoLf5WsSMDxQL0RpJ2/I2ihmFakCOzdW0wObAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/simple_java
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[simple_java] $ /bin/sh -xe /tmp/jenkins14933620043518545997.sh
++ git clone https://github.com/Kapil987/git_prac.git
+Cloning into 'git_prac'...
++ cd git_prac
++ javac Calculator.java
++ java Calculator 22 33 +
+addition of 22 and 33 is 55
+Finished: SUCCESS

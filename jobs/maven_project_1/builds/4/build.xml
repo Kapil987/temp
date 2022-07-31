@@ -1,0 +1,85 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.maven.MavenModuleSetBuild plugin="maven-plugin@3.19">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <com.cloudbees.jenkins.GitHubPushCause plugin="github@1.34.5">
+            <pushedBy>Kapil987</pushedBy>
+          </com.cloudbees.jenkins.GitHubPushCause>
+          <int>2</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <hudson.plugins.git.util.BuildData plugin="git@4.11.4">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.11.1">
+              <sha1>34b98f8f34d558eb44b110a25813c20d376d9777</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>4</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/Kapil987/min_proj.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.maven.reporters.MavenAggregatedArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+    </hudson.maven.reporters.MavenAggregatedArtifactRecord>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>junit:junit-4.11.jar</string>
+          <string>3c42be5ea7cbf3635716abbb429cb90d</string>
+        </entry>
+        <entry>
+          <string>com.demo:demo.war</string>
+          <string>ed707a7b0823466c1153e35af71977ca</string>
+        </entry>
+        <entry>
+          <string>org.hamcrest:hamcrest-core-1.3.jar</string>
+          <string>6393363b47ddcbba82321110c3e07519</string>
+        </entry>
+        <entry>
+          <string>com.demo:demo:pom.xml</string>
+          <string>bab434243e0ca6414790de481b756cbc</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+  </actions>
+  <queueId>17</queueId>
+  <timestamp>1659251791888</timestamp>
+  <startTime>1659251791894</startTime>
+  <result>FAILURE</result>
+  <duration>25517</duration>
+  <charset>US-ASCII</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/maven_project_1</workspace>
+  <hudsonVersion>2.346.2</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@4.11.4">
+    <authorOrCommitter>false</authorOrCommitter>
+    <showEntireCommitSummaryInChanges>true</showEntireCommitSummaryInChanges>
+  </scm>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set">
+      <string>kapil0123</string>
+    </c>
+  </culprits>
+  <mavenVersionUsed>3.8.6</mavenVersionUsed>
+</hudson.maven.MavenModuleSetBuild>
