@@ -6,13 +6,13 @@ Plugin-Dependencies: configuration-as-code:1.54;resolution:=optional,a
  d-api:1.0.13
 Implementation-Title: git-client
 Long-Name: Jenkins Git client plugin
-Implementation-Version: 3.11.1
+Implementation-Version: 3.11.2
 Group-Id: org.jenkins-ci.plugins
 Minimum-Java-Version: 1.8
 Plugin-License-Name: The MIT License (MIT)
 Specification-Title: Utility plugin for Git support in Jenkins
 Plugin-ScmUrl: https://github.com/jenkinsci/git-client-plugin
-Plugin-Version: 3.11.1
+Plugin-Version: 3.11.2
 Jenkins-Version: 2.289.1
 Url: https://github.com/jenkinsci/git-client-plugin/blob/master/README
  .adoc

@@ -27,7 +27,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins.workflow</groupId>
   <artifactId>workflow-basic-steps</artifactId>
-  <version>980.v82219a_ed188e</version>
+  <version>986.v6b_9c830a_6b_37</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Basic Steps</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -42,7 +42,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/workflow-basic-steps-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/workflow-basic-steps-plugin.git</developerConnection>
-    <tag>82219aed188ee2ce33ba52beb8db88c46e36e1cd</tag>
+    <tag>6b9c830a6b3769cc637a7a6de337cc7ac11eebfe</tag>
     <url>https://github.com/jenkinsci/workflow-basic-steps-plugin</url>
   </scm>
   <distributionManagement>
@@ -71,7 +71,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-api</artifactId>
-      <version>1182.v41475e53ea_43</version>
+      <version>1188.v0016b_4f29881</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -89,13 +89,13 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-durable-task-step</artifactId>
-      <version>1164.v2334ddcf48d0</version>
+      <version>1190.vc93d7d457042</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>jakarta-mail-api</artifactId>
-      <version>2.0.0-5</version>
+      <version>2.0.0-6</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

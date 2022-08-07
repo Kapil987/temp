@@ -1,0 +1,48 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@838.va_3a_087b_4055b">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2759.v87459c4eea_ca_">
+    <parentIds>
+      <string>19</string>
+    </parentIds>
+    <id>20</id>
+    <descriptorId>hudson.plugins.emailext.EmailExtStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2759.v87459c4eea_ca_">
+      <arguments>
+        <entry>
+          <string>recipientProviders</string>
+          <list>
+            <linked-hash-map>
+              <entry>
+                <string>$class</string>
+                <string>DevelopersRecipientProvider</string>
+              </entry>
+            </linked-hash-map>
+            <linked-hash-map>
+              <entry>
+                <string>$class</string>
+                <string>RequesterRecipientProvider</string>
+              </entry>
+            </linked-hash-map>
+          </list>
+        </entry>
+        <entry>
+          <string>body</string>
+          <string>FAILURE: Job email_job build 7
+ More info at: http://44.203.161.174:8080/job/email_job/7/</string>
+        </entry>
+        <entry>
+          <string>subject</string>
+          <string>Jenkins Build FAILURE: Job email_job</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1188.v0016b_4f29881">
+      <startTime>1659844171045</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

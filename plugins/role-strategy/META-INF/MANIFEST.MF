@@ -1,15 +1,15 @@
 Manifest-Version: 1.0
-Created-By: Maven Archiver 3.5.2
+Created-By: Maven Archiver 3.6.0
 Build-Jdk-Spec: 11
 Specification-Title: Role-based Authorization Strategy
 Specification-Version: 0.0
 Implementation-Title: Role-based Authorization Strategy
-Implementation-Version: 552.v14cb_85499b_89
+Implementation-Version: 555.v8d194cc85b_30
 Group-Id: org.jenkins-ci.plugins
 Short-Name: role-strategy
 Long-Name: Role-based Authorization Strategy
 Url: https://github.com/jenkinsci/role-strategy-plugin
-Plugin-Version: 552.v14cb_85499b_89
+Plugin-Version: 555.v8d194cc85b_30
 Hudson-Version: 2.303.3
 Jenkins-Version: 2.303.3
 Plugin-Dependencies: caffeine-api:2.9.3-65.v6a_47d0f4d1fe,configuration-

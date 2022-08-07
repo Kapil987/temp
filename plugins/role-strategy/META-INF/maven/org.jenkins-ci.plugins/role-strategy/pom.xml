@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>role-strategy</artifactId>
-  <version>552.v14cb_85499b_89</version>
+  <version>555.v8d194cc85b_30</version>
   <packaging>hpi</packaging>
   <name>Role-based Authorization Strategy</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -37,7 +37,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/role-strategy-plugin.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/jenkinsci/role-strategy-plugin.git</developerConnection>
-    <tag>14cb85499b89a308079b8f672c301380fe961538</tag>
+    <tag>8d194cc85b309b771abbf3bc7a5753e96e2aaa21</tag>
     <url>https://github.com/jenkinsci/role-strategy-plugin</url>
   </scm>
   <distributionManagement>
@@ -121,7 +121,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.28</version>
+        <version>3.32</version>
         <extensions>true</extensions>
       </plugin>
       <plugin>
