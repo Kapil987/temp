@@ -1,0 +1,316 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1207.ve6191ff089f8">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@612.v84da_9c54906d">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2114.v2654ca_721309">
+      <stagesUUID>d2063f7a-cc2c-4e74-9f76-29bf874fc784</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2114.v2654ca_721309">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <when>
+                  <conditions>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                      <name>expression</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">doError == &apos;1&apos;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                  </conditions>
+                </when>
+                <name>Error</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>echo</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>message</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">Failure</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>error</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>message</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">failure test. It&apos;s work</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <when>
+                  <conditions>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                      <name>expression</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">doError == &apos;0&apos;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                  </conditions>
+                </when>
+                <name>Success</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>echo</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>message</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">ok</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>d2063f7a-cc2c-4e74-9f76-29bf874fc784</uuid>
+          </stages>
+          <postBuild>
+            <conditions>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                <condition>always</condition>
+                <branch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>echo</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>message</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">I will always say Hello again!</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>emailext</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>body</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                              <value class="string">&quot;${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}console&quot;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>to</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                              <value class="string">&quot;${env.DEFAULT_RECIPIENTS}&quot;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>recipientProviders</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                              <value class="string">${[[$class: &apos;DevelopersRecipientProvider&apos;], [$class: &apos;RequesterRecipientProvider&apos;]]}</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>subject</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                              <value class="string">&quot;Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}&quot;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </branch>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+            </conditions>
+          </postBuild>
+          <environment>
+            <variables class="linked-hash-map">
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>doError</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">1</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>EMAIL_INFORM</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">abc@gmail.com;def@gmail.com</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+            </variables>
+          </environment>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2759.v87459c4eea_ca_">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1139.veb_9579fca_33b_">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.tasks.MailMessageIdAction plugin="mailer@435.v79ef3972b_5c7">
+      <messageId>&lt;695878014.11.1659854456944@ip-172-31-81-246.ec2.internal&gt;</messageId>
+    </hudson.tasks.MailMessageIdAction>
+  </actions>
+  <queueId>76</queueId>
+  <timestamp>1659854455304</timestamp>
+  <startTime>1659854455306</startTime>
+  <result>FAILURE</result>
+  <duration>2305</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>pipeline {
+    environment {
+        //This variable need be tested as string
+        doError = &apos;1&apos;
+        EMAIL_INFORM = &apos;abc@gmail.com;def@gmail.com&apos;
+        
+    } //env close
+   
+    agent any
+    
+    stages {
+        stage(&apos;Error&apos;) {
+            when {
+                expression { doError == &apos;1&apos; }
+            }
+            steps {
+                echo &quot;Failure&quot;
+                error &quot;failure test. It&apos;s work&quot;
+            }
+        }
+        
+        stage(&apos;Success&apos;) {
+            when {
+                expression { doError == &apos;0&apos; }
+            }
+            steps {
+                echo &quot;ok&quot;
+            }
+        }
+    }
+    post {
+        always {
+            echo &apos;I will always say Hello again!&apos;
+            
+            emailext body: &quot;${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}console&quot;,
+                to: &quot;${env.DEFAULT_RECIPIENTS}&quot;,
+                recipientProviders: [[$class: &apos;DevelopersRecipientProvider&apos;], [$class: &apos;RequesterRecipientProvider&apos;]],
+                subject: &quot;Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}&quot;
+            
+        }
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>137897921</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>959063247</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1055495112</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>141292659</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>197697414</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>27</iota>
+    <head>1:27</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

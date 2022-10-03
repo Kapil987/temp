@@ -1,0 +1,23 @@
+Started by GitHub push by vinod0123
+Started by GitHub push by vinod0123
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/trigger_test-vinod
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/trigger_test-vinod/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/vinod0123/demo_repo # timeout=10
+Fetching upstream changes from https://github.com/vinod0123/demo_repo
+ > git --version # timeout=10
+ > git --version # 'git version 2.37.1'
+ > git fetch --tags --force --progress -- https://github.com/vinod0123/demo_repo +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision ad91ac5fabcfa9b786850807374263652b8421ea (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ad91ac5fabcfa9b786850807374263652b8421ea # timeout=10
+Commit message: "Merge pull request #1 from vinod0123/update"
+ > git rev-list --no-walk fba0f7bbc5667fc09a371548fc41c33a10f42e73 # timeout=10
+[trigger_test-vinod] $ /bin/sh -xe /tmp/jenkins4404760627568850569.sh
++ echo 'Hi I got Triggered'
+Hi I got Triggered
+Finished: SUCCESS

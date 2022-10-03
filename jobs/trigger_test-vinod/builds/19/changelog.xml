@@ -1,0 +1,12 @@
+commit 1cfc77ddd6aa5fc4178457a928c720af3e78c7bd
+tree f3637bcf1da78f50cd5af833af8969a6f3b26f31
+parent 9793189128dd87245fd5e30d7f41a60917a46960
+author vinod <vinod@email.com> 2022-08-13 06:22:16 +0000
+committer vinod <vinod@email.com> 2022-08-13 06:22:16 +0000
+
+    Revert "vinod added"
+    
+    This reverts commit 9793189128dd87245fd5e30d7f41a60917a46960.
+
+
+:100644 100644 cef470273783f859c2d0924a65524064bae16053 c9266c906546cda540caa1fff8dc7bbceac0e0b6 M	index.html

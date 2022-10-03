@@ -1,0 +1,13 @@
+Started on Aug 13, 2022, 4:46:38 AM
+Started by event from 140.82.115.248 ⇒ http://44.204.54.231:8080/github-webhook/ on Sat Aug 13 04:46:38 UTC 2022
+Using strategy: Default
+[poll] Last Built Revision: Revision fba0f7bbc5667fc09a371548fc41c33a10f42e73 (refs/remotes/origin/main)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.37.1'
+ > git ls-remote -h -- https://github.com/vinod0123/demo_repo # timeout=10
+Found 2 remote heads on https://github.com/vinod0123/demo_repo
+[poll] Latest remote head revision on refs/heads/main is: ad91ac5fabcfa9b786850807374263652b8421ea
+Done. Took 0.1 sec
+Changes found

@@ -1,0 +1,105 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1207.ve6191ff089f8">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@612.v84da_9c54906d">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2759.v87459c4eea_ca_">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1139.veb_9579fca_33b_">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.tasks.MailMessageIdAction plugin="mailer@435.v79ef3972b_5c7">
+      <messageId>&lt;128441302.45.1659860567294@ip-172-31-81-246.ec2.internal&gt;</messageId>
+    </hudson.tasks.MailMessageIdAction>
+  </actions>
+  <queueId>114</queueId>
+  <timestamp>1659860566626</timestamp>
+  <startTime>1659860566629</startTime>
+  <result>SUCCESS</result>
+  <duration>1414</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+  try {
+    echo &quot;hi&quot;
+    // error &quot;failure test. It&apos;s work&quot;
+  } catch (e) {
+    currentBuild.result = &quot;FAILED&quot;
+    // notifyBuild(currentBuild.result) // if case you want to notify immediately 
+    throw e
+  }
+  finally {
+    notifyBuild(currentBuild.result) // will be null if build is successful
+  }
+ 
+}
+
+def notifyBuild(String buildStatus = &apos;STARTED&apos;) {
+  // echo &quot;build value is= ${buildStatus}&quot;
+  // echo &quot;build value is= ${currentBuild.result}&quot;
+  buildStatus =  buildStatus ?: &apos;SUCCESSFUL&apos;// if null then else is true and value becomes successful
+  // echo &quot;build value is= ${buildStatus}&quot;
+  // def myProviders = [ [$class: &apos;CulpritsRecipientProvider&apos;], [$class: &apos;DevelopersRecipientProvider&apos;] ];
+  def myProviders = [ [$class: &apos;CulpritsRecipientProvider&apos;] ];
+  // myProviders.add ( [$class: &apos;RequesterRecipientProvider&apos;] );
+  def subject = &quot;${buildStatus}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;
+  def summary = &quot;${subject} (${env.BUILD_URL})&quot;
+  def details = &quot;&quot;&quot;
+  &lt;p&gt;STARTED: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;:&lt;/p&gt;
+  &lt;p&gt;Check console output at &quot;&lt;a href=&quot;${env.BUILD_URL}console&quot;&gt;${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&quot;&lt;/p&gt;
+  &quot;&quot;&quot; 
+  emailext (
+    subject: subject,
+    body: details,
+    attachLog: true,
+    to: &apos;$DEFAULT_RECIPIENTS&apos;,
+    recipientProviders: myProviders,
+  )
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>31144563</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>15729044</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>91186016</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>24037138</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>19347603</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>9</iota>
+    <head>1:9</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

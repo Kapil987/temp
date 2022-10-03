@@ -21,7 +21,7 @@
       </domainCredentialsMap>
     </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
     <hudson.tasks.Mailer_-UserProperty plugin="mailer@435.v79ef3972b_5c7">
-      <emailAddress>kapilhsr9@gmail.com</emailAddress>
+      <emailAddress>Kapilhsr9@gmail.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
     <hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty plugin="email-ext@2.91">
       <triggers/>

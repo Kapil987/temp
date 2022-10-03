@@ -10,11 +10,11 @@
   <usages>
     <entry>
       <string>maven_project_1</string>
-      <ranges>2-15</ranges>
+      <ranges>2-16</ranges>
     </entry>
     <entry>
       <string>maven_project_1/com.demo:demo</string>
-      <ranges>2-15</ranges>
+      <ranges>2-16</ranges>
     </entry>
   </usages>
   <facets/>
